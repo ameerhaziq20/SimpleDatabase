@@ -8,8 +8,11 @@ import androidx.room.Query
 interface DatabaseDao
 {
     @Insert
-    fun saveBooks(book: DatabaseEntity)
+    fun saveBooks(attendance: DatabaseEntity)
 
     @Query(value = "Select * from DatabaseEntity")
     fun getAllBooks() : List<DatabaseEntity>
+
+    @Query("DELETE FROM DatabaseEntity")
+    fun deleteAll()
 }

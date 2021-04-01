@@ -23,10 +23,17 @@ class MainActivity : AppCompatActivity() {
 
         //bookEntity.bookId = 1
 
+        //test for adding static data to database
         val testAdd = findViewById<Button>(R.id.button2)
         testAdd.setOnClickListener{
             bookEntity.bookName = "Next App"
             db.databaseDao().saveBooks(bookEntity)
+        }
+
+        //test for clearing all data in database
+        val testDelete = findViewById<Button>(R.id.button)
+        testDelete.setOnClickListener{
+            db.databaseDao().deleteAll()
         }
 
 

@@ -10,7 +10,7 @@ class DatabaseEntity {
     @PrimaryKey(autoGenerate = true)
     var bookId: Int =0
 
-    @ColumnInfo(name ="BookName")
+    @ColumnInfo(name ="Student ID")
     var bookName:  String =""
 
 }
