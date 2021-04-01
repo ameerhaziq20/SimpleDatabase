@@ -13,4 +13,7 @@ class DatabaseEntity {
     @ColumnInfo(name ="Student ID")
     var bookName:  String =""
 
+    @ColumnInfo(name = "Temperature")
+    var bodyTemp:   String=""
+
 }
